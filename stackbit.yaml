@@ -649,10 +649,3 @@ models:
   contactsection:
     type: object
     label: contactsection
-  detail_us:
-    type: object
-    label: Contact Us
-    fields:
-      - name: title
-        type: string
-        label: Section Title
