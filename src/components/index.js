@@ -15,7 +15,7 @@ import SectionActions from './SectionActions';
 import TeamSection from './TeamSection';
 import Layout from './Layout';
 import GridSection from './GridSection';
-import ContactUs from './ContactUs';
+import DetailUs from './DetailUs';
 
 export {
     Action,
