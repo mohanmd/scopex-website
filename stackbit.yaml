@@ -651,4 +651,4 @@ models:
     label: contactsection
   contactus:
     type: object
-    label: contactus
+    label: Contact Us
