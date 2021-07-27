@@ -1,0 +1,138 @@
+/**
+ * Site Layout
+ */
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.site-content {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.card{
+    padding: 13px
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    &.grid-col-3{
+        .grid-item {
+            max-width: 33.3%;
+            width: 100%;
+            
+        }
+    }
+    &.grid-col-4{
+        .grid-item {
+            max-width: 23%;
+            width: 100%;
+            padding: 1%;
+        }
+    }
+}
+
+
+//Page title
+h1.block-title {
+    font-size: 2.1rem;
+    font-weight: 500;
+    /* text-align: center; */
+    margin-bottom: 3.5rem;
+    position: relative;
+    padding-bottom: 2rem;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #f2883a;
+        height: 11px;
+        width: 20%;
+        padding-bottom: 2e;
+        border-radius: 3px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 75%;
+        background: #f2883a;
+        bottom: 4px;
+    }
+}
+section.section.section--posts {
+    display: none;
+}
+.insutrial_sectors{ 
+    background-size: contain;
+    background-repeat: no-repeat;
+    .block-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .card{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 35px;
+        border-radius: 20px;
+        .card_title {
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        &:hover{
+            box-shadow: 0px 0px 14px 3px #00000014;
+            background: #fdf7e8;
+            /* border-color: #eee; */
+            transform: scale(1.031);
+            transition: .3s;
+            .grid-item-image { 
+                background-color: #f2883a;
+                img{
+                    filter: invert(1) brightness(1) contrast(5);
+                }
+            }
+        }
+    }
+    .grid-item-image { 
+        width: 70px;
+        height: 70px;
+        border: 2px solid #f2883a;
+        padding: 16px;
+        border-radius: 100px;
+        margin: 0 auto 30px;
+        // margin-bottom: 40px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .insutrial_sectors{
+        .grid-col-4{
+            .grid-item {
+                max-width: 50%;
+                width: 100%;
+                
+            }
+        }
+    }
+} 
+@media only screen and (max-width: 480px){
+    .insutrial_sectors{
+        .grid-col-4{
+            .grid-item {
+                max-width: 100%;
+                width: 100%;
+                
+            }
+        }
+    }
+}
