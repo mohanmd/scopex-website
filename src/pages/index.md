@@ -74,7 +74,6 @@ sections:
     type: grid_section
     class_name: insutrial_sectors
     bg_images: images/Apps banner image.svg
-  - type: contact_section
 seo:
   title: Stackbit Starter Theme
   description: The preview of the Starter theme
