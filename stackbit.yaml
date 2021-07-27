@@ -653,3 +653,6 @@ models:
   contactus:
     type: object
     label: Contact Us
+    fields:
+      - name: ''
+        type: string
