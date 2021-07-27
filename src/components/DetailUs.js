@@ -1,7 +1,5 @@
 import React from 'react'; 
 import _ from 'lodash';
-import {classNames, htmlToReact, withPrefix, Link, markdownify, toStyleObj} from '../utils';
-gfgf
 export default class DetailUs extends React.Component {
     render() {
         console.log(this.props );
