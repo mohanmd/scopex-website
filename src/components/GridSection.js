@@ -22,7 +22,7 @@ export default class GridSection extends React.Component {
                         <div className="grid-item-inside card">
                             {_.get(item, 'icon', null) && (
                             <div className="grid-item-image">
-                            <img src={withPrefix(_.get(item, 'icon', null))}  alt="Card Picture"/>
+                            <img src={withPrefix(_.get(item, 'icon', null))}  alt="Card"/>
                             </div>
                             )}
                             {_.get(item, 'grid_title', null) && (
