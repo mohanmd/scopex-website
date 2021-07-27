@@ -1,6 +1,6 @@
 import React from 'react'; 
 import _ from 'lodash';
-import {classNames, withPrefix, Link, markdownify, toStyleObj} from '../utils';
+import {classNames, withPrefix,  toStyleObj} from '../utils';
 
 export default class GridSection extends React.Component {
     render() {
