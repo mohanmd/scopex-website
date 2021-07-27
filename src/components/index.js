@@ -35,7 +35,7 @@ export {
     TeamSection,
     Layout,
     GridSection,
-    GridSection
+    Con
 };
 
 export default {
