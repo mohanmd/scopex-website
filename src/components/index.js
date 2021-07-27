@@ -34,8 +34,7 @@ export {
     SectionActions,
     TeamSection,
     Layout,
-    GridSection,
-    DetailUs
+    GridSection
 };
 
 export default {
@@ -55,6 +54,5 @@ export default {
     SectionActions,
     TeamSection,
     Layout,
-    GridSection,
-    DetailUs
+    GridSection
 };
