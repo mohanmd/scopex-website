@@ -268,7 +268,7 @@ models:
             - hero_section
             - team_section
             - grid_section
-            - detailus
+            - detail_us
       - type: model
         name: seo
         models:
@@ -650,7 +650,7 @@ models:
   contactsection:
     type: object
     label: contactsection
-  detailus:
+  detail_us:
     type: object
     label: Contact Us
     fields:
