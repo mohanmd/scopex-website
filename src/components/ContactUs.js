@@ -2,7 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import {classNames, htmlToReact, withPrefix, Link, markdownify, toStyleObj} from '../utils';
 
-export default class GridSection extends React.Component {
+export default class ContactUs extends React.Component {
     render() {
         console.log(this.props );
         let section = _.get(this.props, 'section', null);
