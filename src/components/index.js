@@ -56,5 +56,5 @@ export default {
     TeamSection,
     Layout,
     GridSection,
-    ContactUs
+    DetailUs
 };
