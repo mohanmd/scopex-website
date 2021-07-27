@@ -6,6 +6,7 @@ import {withPrefix, attribute} from '../utils';
 import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
+import ContactUs from './ContactUs';
 
 export default class Body extends React.Component {
     render() {
@@ -45,6 +46,7 @@ export default class Body extends React.Component {
                   <main id="content" className="site-content">
                     {this.props.children}
                   </main>
+                  <ContactUs {...this.props}  />
                   <Footer {...this.props} />
                 </div>
             </React.Fragment>

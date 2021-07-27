@@ -15,6 +15,7 @@ import SectionActions from './SectionActions';
 import TeamSection from './TeamSection';
 import Layout from './Layout';
 import GridSection from './GridSection';
+import ContactUs from './ContactUs';
 
 export {
     Action,
@@ -22,7 +23,7 @@ export {
     BlogFeedSection,
     BlogPostCategories,
     BlogPostFeedItem,
-    // BlogPostTags,
+    BlogPostTags,
     ContactSection,
     ContentSection,
     CtaSection,
@@ -33,7 +34,8 @@ export {
     SectionActions,
     TeamSection,
     Layout,
-    GridSection
+    GridSection,
+    ContactUs
 };
 
 export default {
@@ -42,7 +44,7 @@ export default {
     BlogFeedSection,
     BlogPostCategories,
     BlogPostFeedItem,
-    // BlogPostTags,
+    BlogPostTags,
     ContactSection,
     ContentSection,
     CtaSection,
@@ -53,5 +55,6 @@ export default {
     SectionActions,
     TeamSection,
     Layout,
-    GridSection
+    GridSection,
+    ContactUs
 };

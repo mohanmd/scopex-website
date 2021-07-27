@@ -16,6 +16,7 @@ export const query = graphql`
 
 export default class Advanced extends React.Component {
     render() {
+      console.log(this.props)
         return (
             <Layout {...this.props}>
             {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
