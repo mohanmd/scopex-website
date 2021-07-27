@@ -268,7 +268,6 @@ models:
             - hero_section
             - team_section
             - grid_section
-            - detail_us
       - type: model
         name: seo
         models:
