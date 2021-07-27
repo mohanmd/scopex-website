@@ -646,6 +646,3 @@ models:
       - name: icon
         type: image
         label: Grid Icon
-  contactsection:
-    type: object
-    label: contactsection
