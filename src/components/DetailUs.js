@@ -1,6 +1,6 @@
 import React from 'react'; 
 import _ from 'lodash';
-import {classNames, htmlToReact, withPrefix, , toStyleObj} from '../utils';
+import {classNames, htmlToReact, withPrefix,toStyleObj} from '../utils';
 
 export default class DetailUs extends React.Component {
     render() {
