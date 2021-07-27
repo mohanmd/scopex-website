@@ -76,8 +76,6 @@ sections:
     bg_images: images/Apps banner image.svg
   - title: lorem-ipsum
     type: contactus
-  - title: lorem-ipsum
-    type: detail_us
 seo:
   title: Stackbit Starter Theme
   description: The preview of the Starter theme
