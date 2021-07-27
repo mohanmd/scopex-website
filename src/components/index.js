@@ -55,5 +55,6 @@ export default {
     SectionActions,
     TeamSection,
     Layout,
-    GridSection
+    GridSection,
+    ContactUs
 };
