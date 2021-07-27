@@ -34,6 +34,7 @@ export {
     SectionActions,
     TeamSection,
     Layout,
+    GridSection,
     GridSection
 };
 
