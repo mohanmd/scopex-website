@@ -32,10 +32,6 @@ sections:
           - label: Know More
             url: /features
             style: secondary
-  - type: blog_feed_section
-    title: Apps can be grouped and packeged to serve various industrial sectors
-    show_recent: false
-    recent_count: 3
   - grid_column: four
     section_title: Apps can be grouped and packeged to serve various industrial sectors
     grid_item:
