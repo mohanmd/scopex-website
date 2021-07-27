@@ -654,5 +654,5 @@ models:
     type: object
     label: Contact Us
     fields:
-      - name: ''
+      - name: title
         type: string
