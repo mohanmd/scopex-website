@@ -1,6 +1,15 @@
 /**
  * Site Layout
  */
+ $orange : #f2883a;
+ $grey: #5a5a5a;
+
+ .text-center {
+    text-align: center;
+}
+.w-40{
+    width: 40% !important;
+}
 .site {
   display: flex;
   flex-direction: column;
@@ -14,9 +23,68 @@
   width: 100%;
 }
 
+.mt-20{
+    margin-top: 20px;
+}
+
+
+header{
+    .navbar__list menu{
+        justify-content: flex-end;
+        .navbar__item {
+           &:not(.navbar__item--btn){
+            font-size: 1.175em;
+           }
+            a{
+                &.btn-xs {
+                    transform: scale(.9);
+                }
+            }
+        }
+    }
+    .secondary_menu{
+        .navbar__list menu{
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .navbar__item {
+            a:first-child{
+                margin-right: 20px;
+            }
+            img {
+                width: 29px;
+                position: relative;
+                top: 8px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.request_col{
+    padding-left: 90px
+}
+
+// flex row
+.d-flex {
+    display: flex;
+    > .grid-item {
+        width: 100%;
+        &.mw-480{
+            max-width: 480px;
+        }
+        &.mw-330{
+            max-width: 330px;
+        }
+        &.mw-300{
+            max-width: 300px;
+        }
+    }
+}
+
 .card{
     padding: 13px
 }
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +118,7 @@ h1.block-title {
         position: absolute;
         bottom: 0;
         left: 0;
-        background: #f2883a;
+        background: $orange;
         height: 11px;
         width: 20%;
         padding-bottom: 2e;
@@ -61,7 +129,7 @@ h1.block-title {
         position: absolute;
         height: 2px;
         width: 75%;
-        background: #f2883a;
+        background: $orange;
         bottom: 4px;
     }
 }
@@ -71,6 +139,7 @@ section.section.section--posts {
 .insutrial_sectors{ 
     background-size: contain;
     background-repeat: no-repeat;
+    padding-bottom: 5em;
     .block-content {
         max-width: 1000px;
         margin: 0 auto;
@@ -92,7 +161,7 @@ section.section.section--posts {
             transform: scale(1.031);
             transition: .3s;
             .grid-item-image { 
-                background-color: #f2883a;
+                background-color: $orange;
                 img{
                     filter: invert(1) brightness(1) contrast(5);
                 }
@@ -102,7 +171,7 @@ section.section.section--posts {
     .grid-item-image { 
         width: 70px;
         height: 70px;
-        border: 2px solid #f2883a;
+        border: 2px solid $orange;
         padding: 16px;
         border-radius: 100px;
         margin: 0 auto 30px;
@@ -117,31 +186,30 @@ section.section.section--posts {
 
 // contact section 
 .contact_us {
-    background-color: #f2883a;
-    padding: 4em 0;
+    background-color: $grey;
+    padding: 5em 0;
+    position: relative;
+    overflow: hidden;
     &:after{
         // content: url("images/lines.svg");
     }
 
-img.shape_contact.right {
-    left: inherit;
-    right: -9%;
-}
-img.shape_contact.left {
-    transform: rotateY(
-180deg
-);
-    /* right: 0; */
-    /* left: inherit; */
-}
-img.shape_contact {
-    position: absolute;
-    height: 103%;
-    top: 0;
-    left: -9%;
-    filter: invert(1);
-    opacity: .7;
-}
+    img.shape_contact.right {
+        left: inherit;
+        right: -9%;
+    }
+    img.shape_contact.left {
+        transform: rotateY(180deg);
+        /* right: 0; */
+        /* left: inherit; */
+    }
+    img.shape_contact {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: -9%; 
+        opacity: .3;
+    }
     .block-title{
         width: fit-content;
         margin-left: auto;
@@ -153,6 +221,10 @@ img.shape_contact {
         &:after{
             width: 40%;
         }
+    }
+    .block-content{
+        position: relative;
+        z-index: 2;
     }
     .grid-item-inside {
         .grid-item-image {
@@ -189,6 +261,114 @@ img.shape_contact {
         }
     }
 }
+
+.w-80{
+    width: 80% !important;
+}
+
+// footer section
+.footer_top{
+    margin-bottom: 2em;
+    .footer_logo {
+        max-width: 320px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .cust_row {
+        display: flex;
+        position: relative;
+        padding-bottom: 3em;
+        > div{
+            width: 100%;
+            .footer_col_title {
+                font-size: 26px;
+                font-weight: 500;
+                margin-bottom: 22px;
+            }
+            .footer_menu{
+                list-style-type: none;
+                padding-left: 3px;
+                li {
+                    margin-bottom: 10px;
+                    img{
+                        width: 16px;
+                        margin-right: 10px;
+                        position: relative;
+                        top: 3px;
+                    }
+                    a{
+                        color: #444;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .address {
+                margin-bottom: 35px;
+            }
+            .social{
+                .site-footer__social {
+                    li{
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                    }
+                    .icon{
+                        width: 50px;
+                        height: 50px;
+                        transition: .1s;
+                        &:hover {
+                            transform: scale(1.1);
+                            transition: .1s;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .shape_footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 78%;
+            background: #f2883a;
+            height: 2px;
+            span{
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                width: 30%;
+                height: 11px;
+                background: #f2883a;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+
+// footer bottom
+.footer_bottom{
+    .copy_right {
+        font-weight: 500;
+        color: #444;
+        font-size: 19px;
+        margin-bottom: .5rem;
+    }
+    .develop_info {
+        color: #444;
+        margin-bottom: 20px;
+        a{
+            font-weight: 500;
+            text-decoration: none;
+            color: #444;
+            margin-left: 8px;
+        }
+    }
+}
+
+
 
 @media only screen and (max-width: 1100px){
     .insutrial_sectors{

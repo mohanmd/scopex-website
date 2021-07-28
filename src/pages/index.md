@@ -38,6 +38,10 @@ sections:
     recent_count: 3
   - grid_column: four
     section_title: Apps can be grouped and packeged to serve various industrial sectors
+    action: 
+      - label : View More
+        url : '#'
+        icon : images/arrow_right.svg
     grid_item:
       - grid_title: Sales & Service
         type: grid_item
@@ -79,8 +83,8 @@ sections:
     class_name: insutrial_sectors
     bg_images: images/Apps banner image.svg
 seo:
-  title: Stackbit Starter Theme
-  description: The preview of the Starter theme
+  title: Scopex Apps India Private Ltd
+  description: Apps 
   extra:
     - name: 'og:type'
       value: website
@@ -89,7 +93,7 @@ seo:
       value: Stackbit Starter Theme
       keyName: property
     - name: 'og:description'
-      value: The preview of the Starter theme
+      value: Scopex Apps India Private Ltd
       keyName: property
     - name: 'og:image'
       value: images/starter-preview.png
@@ -98,7 +102,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Stackbit Starter Theme
+      value: Scopex Apps India Private Ltd
     - name: 'twitter:description'
       value: The preview of the Starter theme
     - name: 'twitter:image'

@@ -8,8 +8,8 @@ export default class ContactUs extends React.Component {
                 <div className="container container--lg"> 
                     <h1 className="block-title">Contact Us</h1>
                     <div className="block-content">
-                        <div className='grid grid-col-3'>
-                            <div className="grid-item">
+                        <div className='d-flex'>
+                            <div className="grid-item mw-480 request_col">
                                 <div className="grid-item-inside ">
                                     <div className="grid-item-image">
                                         <img src="images/icon/enquiry.svg"  alt="Enquiry"/>
@@ -23,7 +23,7 @@ export default class ContactUs extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="grid-item">
+                            <div className="grid-item  mw-330">
                                 <div className="grid-item-inside ">
                                     <div className="grid-item-image">
                                         <img src="images/icon/message.svg"  alt="Message"/>
@@ -34,7 +34,7 @@ export default class ContactUs extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="grid-item">
+                            <div className="grid-item  mw-300">
                                 <div className="grid-item-inside ">
                                     <div className="grid-item-image">
                                         <img src="images/icon/support.svg"  alt="Call Us"/>

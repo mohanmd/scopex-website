@@ -21,7 +21,23 @@ export default class Header extends React.Component {
                     <svg className="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z" /></svg>
                   </button>
                   <div className="navbar__menu">
+                    
                     <div className="navbar__scroller">
+                      <div className="secondary_menu">
+                        <ul className="navbar__list menu">
+                          <li className="navbar__item">
+                              <a href="mailto:info@example.com">
+                                <img src="images/icon/mail.svg" />
+                                <span>info@example.com</span>
+                              </a>
+                              <a href="tel:123456789">
+                                <img src="images/icon/call.svg" />
+                                <span>123456789</span>
+                              </a>
+                          </li>
+                        </ul>
+                      </div>  
+
                       <div className="navbar__inner">
                         <button aria-label="Close" className="btn btn--icon btn--clear navbar__close-btn js-nav-toggle">
                           <svg className="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z" /></svg>

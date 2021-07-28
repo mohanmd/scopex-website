@@ -2,9 +2,13 @@
  * Site Header
  */
 .site-header {
-  border-bottom: 1px solid $color-border;
+  // border-bottom: 1px solid $color-border;
   padding-bottom: 1.125rem;
   padding-top: 1.125rem;
+  position: sticky;
+  top: 0;
+  z-index: 111;
+  background-color: #fff;
 }
 
 .navbar {
@@ -24,6 +28,8 @@
     max-height: 4rem;
     height: 71px;
     width: auto;
+    position: relative;
+    top: 6px;
   }
 }
 

@@ -36,6 +36,21 @@ export default class GridSection extends React.Component {
                     </div>
                     </div>
                     )}
+
+                    {_.get(section, 'action', null) && (
+                        <div className="action_btn text-center mt-20">
+                        {_.map(_.get(section, 'action', null), (item, item_idx) => (
+                            <a key={item_idx} href={_.get(item, 'url', null)} className="btn btn--secondary ">
+                                {_.get(item, 'label', null) && (
+                                    <span >{_.get(item, 'label', null)}</span>
+                                )}
+                            </a>
+                        ))}
+
+                        
+                        </div>
+                    )}
+
                 </div>
             </section>
         );

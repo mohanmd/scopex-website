@@ -8,15 +8,15 @@ input[type="reset"],
 .btn {
   background-color: $color-btn-bg;
   border: 2px solid $color-btn-border;
-  border-radius: 5px;
+  border-radius: 11px;
   box-sizing: border-box;
   color: $color-btn;
   cursor: pointer;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 700;
   line-height: 1.25;
-  padding: 0.625em 1.5em;
+  padding: 0.825em 1.5em;
   text-align: center;
   text-decoration: none;
   transition: .3s ease;
@@ -33,7 +33,7 @@ input[type="reset"],
 .btn--secondary {
   background-color: transparent;
   border-color: $color-btn-alt-border;
-  color: $color-btn-alt;
+  color: #000;
 }
 
 .btn--icon {

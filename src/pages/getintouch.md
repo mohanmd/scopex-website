@@ -22,8 +22,8 @@ sections:
     class_name: contact_us
     bg_images: images/section_bg.svg
 seo:
-  title: Stackbit Starter Theme
-  description: The preview of the Starter theme
+  title: Scopex Apps India Private Ltd
+  description: Scopex Apps India Private Ltd
   extra:
     - name: 'og:type'
       value: website
