@@ -37,7 +37,7 @@
                 "type": "action"
             }
         ],
-        "logo": "images/logo.svg"
+        "logo": "images/scopex-logo.svg"
     },
     "footer": {
         "has_nav": true,
@@ -60,28 +60,28 @@
                 "url": "",
                 "style": "link",
                 "new_window": false,
-                "icon" : "images/icon/social/twitter.svg"
+                "icon": "images/icon/social/twitter.svg"
             },
             {
                 "label": "Instagram",
                 "url": "",
                 "style": "link",
                 "new_window": true,
-                "icon" : "images/icon/social/insta.svg"
+                "icon": "images/icon/social/insta.svg"
             },
             {
                 "label": "Youtube",
                 "url": "",
                 "style": "link",
                 "new_window": true,
-                "icon" : "images/icon/social/youtube.svg"
+                "icon": "images/icon/social/youtube.svg"
             },
             {
                 "label": "Facebook",
                 "url": "",
                 "style": "link",
                 "new_window": true,
-                "icon" : "images/icon/social/facebook.svg"
+                "icon": "images/icon/social/facebook.svg"
             }
         ],
         "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=starter&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>"
