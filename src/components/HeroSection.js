@@ -96,7 +96,7 @@ export default class HeroSection extends React.Component {
                     </div>
                 </div>
 
-              <div className="modal" data-active={isActive ? "active" : ""}>
+              <div className="modal" data-active={isActive ? "active" : ""}> 
                 <div className="modal-header">
                   <h4>Enquiry</h4>
                   <div className="close_button" onClick={this.handleToggle}>
