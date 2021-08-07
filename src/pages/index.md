@@ -6,7 +6,7 @@ sections:
     subtitle: >-
       The app that can help you to optimize and atomize your business processes
       and can be interconnected with all to provide a fully-integrated
-      experience and cost effectivefly.
+      experience cost effectivefly.
     actions:
       - label: Schedule a Demo
         url: /features
@@ -23,7 +23,7 @@ sections:
       background_image_repeat: repeat
   - type: features_section
     features:
-      - title: Flexible Modules Customizable according your unique needs
+      - title: Flexible Modules Customizable according to your unique needs
         align: left
         image: images/Flexible module  image.svg
         image_alt: Feature 1 placeholder image
@@ -61,24 +61,12 @@ sections:
       - grid_title: 'Construction '
         type: grid_item
         icon: images/Construction.svg
-      - grid_title: Oil & Gas
-        type: grid_item
-        icon: images/Oil and Gas.svg
-      - grid_title: Education & E-learning
-        type: grid_item
-        icon: images/nervous-spinach.svg
       - grid_title: Logistics
         type: grid_item
         icon: images/Logistics.svg
-      - grid_title: Health Care
+      - grid_title: Education & E-learning
         type: grid_item
-        icon: images/melodic-oregano.svg
-      - grid_title: Power Technology
-        type: grid_item
-        icon: images/Power technology.svg
-      - grid_title: Social Network
-        type: grid_item
-        icon: images/Social network.svg
+        icon: images/nervous-spinach.svg
     type: grid_section
     class_name: insutrial_sectors
     bg_images: images/Apps banner image.svg

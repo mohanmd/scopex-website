@@ -23,20 +23,21 @@ export default class Header extends React.Component {
                   <div className="navbar__menu">
                     
                     <div className="navbar__scroller">
-                      <div className="secondary_menu">
+                      {/* <div className="secondary_menu">
                         <ul className="navbar__list menu">
                           <li className="navbar__item">
                               <a href="mailto:info@example.com">
                                 <img src="images/icon/mail.svg" />
                                 <span>info@example.com</span>
                               </a>
-                              <a href="tel:123456789">
+                              <a href="tel:123456789" className="call_menu">
                                 <img src="images/icon/call.svg" />
                                 <span>123456789</span>
                               </a>
                           </li>
+                          <li class="navbar__item navbar__item--btn"><a href="#" class="btn">Schedule a demo</a></li>
                         </ul>
-                      </div>  
+                      </div>   */}
 
                       <div className="navbar__inner">
                         <button aria-label="Close" className="btn btn--icon btn--clear navbar__close-btn js-nav-toggle">
@@ -47,11 +48,14 @@ export default class Header extends React.Component {
                               let pageUrl = _.trim(_.get(this.props, 'pageContext.url', null), '/');
                               let actionUrl = _.trim(_.get(action, 'url', null), '/');
                               return (
-                                <li key={action_idx} className={classNames('navbar__item', {'navbar__item--btn': _.get(action, 'style', null) !== 'link', 'is-active': pageUrl === actionUrl})}>
+                                <li key={action_idx} className={classNames('navbar__item', {'navbar__item--btn none': _.get(action, 'style', null) !== 'link', 'is-active': pageUrl === actionUrl})}>
                                   <Action {...this.props} action={action} />
                                 </li>
                               )
                           })}
+                          <li   className="search_icon">
+                            <img src="images/icon/search-icon.svg" />
+                          </li>
                         </ul>
                       </div>
                     </div>

@@ -31,6 +31,9 @@ export default class ContactUs extends React.Component {
                                     <div className="grid-item-title">
                                         <div className="card_title">Chat with expert </div>
                                         <div className="card_subtitle">Available Monday -Saturday</div>
+                                        <a href="#!" className="card_action">Send a Request 
+                                            <img src="images/icon/arrow.svg" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>

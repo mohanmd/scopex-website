@@ -1,3 +1,56 @@
-.grid{
-    
+// flex
+.d_flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
+// Modal
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    z-index: 1111;
+    padding: 25px 27px;
+    border: 1px solid #cccc;
+    border-radius: 10px;
+    &:not([data-active="active"]) {
+        display: none;
+    }
+    .close_button {
+        background-color: #ccc;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        right: 9px;
+        top: 8px;
+        opacity: .5;
+        cursor: pointer;
+        @extend .d_flex_center;
+        &:hover{
+            opacity: 1;
+        }
+        &:active{
+            transform: scale(.9);
+            transition: .1s;
+        }
+    }
+}
+.modal-overlay:not([data-active="active"]) {
+    display: none;
+}
+.modal-overlay{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+}
+

@@ -3,9 +3,20 @@ import _ from 'lodash';
 
 import {classNames, toStyleObj, withPrefix} from '../utils';
 import SectionActions from './SectionActions';
-
+ 
 export default class HeroSection extends React.Component {
+  state = { button1: false, button2: false, button3: false, isActive: false };
+  constructor() {
+    super();
+  }
+
+  handleToggle = () => {
+    this.setState({ isActive: !this.state.isActive });
+    console.log('test');
+  };
     render() {
+        const { showing1, showing2, showing3, isActive } = this.state;
+        console.log(showing1);
         let section = _.get(this.props, 'section', null);
         let background = _.get(section, 'background', null);
         let background_color = _.get(background, 'background_color', null) || 'white';
@@ -42,6 +53,77 @@ export default class HeroSection extends React.Component {
                   </div>
                 </div>
               </div>
+
+
+                <div className="fixed_sect">
+                  
+                    <div className="item message"  onClick={() => this.setState({ showing1: !showing1})}>
+                      <div className="icon">
+                        <img src="images/icon/fixed/chat.svg" />
+                      </div>
+                      { showing1
+                          ? <div className="content">
+                                <div className="title">Chart with Expert</div>
+                                <div className="sub_title">Available Monday - Saturday </div>
+                            </div>
+                          : null
+                      }
+                    </div>
+                    <div className="item enquiry"  onClick={this.handleToggle}>
+                      <div className="icon">
+                        <img src="images/icon/fixed/enquiry.svg" />
+                      </div>
+                      { showing2 
+                          ? <div className="content">
+                                <div className="title">Enquiry</div>
+                                <div className="sub_title">Available Monday - Saturday </div>
+                            </div>
+                          : null
+                      }
+                          
+                    </div>
+                    <div className="item support"  onClick={() => this.setState({ showing3: !showing3})}>
+                      <div className="icon">
+                        <img src="images/icon/fixed/support.svg" />
+                      </div>
+                      { showing3 
+                          ? <div className="content">
+                                <div className="title">123456789</div>
+                                <div className="sub_title">Available Monday - Saturday </div>
+                            </div>
+                          : null
+                      }
+                    </div>
+                </div>
+
+              <div className="modal" data-active={isActive ? "active" : ""}>
+                <div className="modal-header">
+                  <h4>Enquiry</h4>
+                  <div className="close_button" onClick={this.handleToggle}>
+                    X
+                  </div>
+                </div>
+                <div className="modal-body">
+                    <form className="">
+                        <div className="form-group">
+                            <label>Name</label>
+                            <input className="form_control" type="text"/>
+                        </div>
+                        <div className="form-group">
+                            <label>Email</label>
+                            <input className="form_control" type="email"/>
+                        </div>
+                        <div className="form-group">
+                            <label>Message</label>
+                            <input className="form_control" type="text"/>
+                        </div>
+                        <div className="text-right form-group">
+                          <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+              <div className="modal-overlay"  data-active={isActive ? "active" : ""}></div>
             </section>
         );
     }

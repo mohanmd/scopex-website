@@ -29,15 +29,12 @@
                 "style": "link"
             },
             {
-                "label": "Schedule a demo",
-                "url": "#",
-                "style": "primary",
-                "new_window": false,
-                "no_follow": false,
-                "type": "action"
+                "label": "Login",
+                "url": "/login",
+                "style": "button"
             }
         ],
-        "logo": "images/logo.svg"
+        "logo": "images/logo/logo-header.svg"
     },
     "footer": {
         "has_nav": true,
@@ -87,6 +84,6 @@
         "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=starter&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>"
     },
     "title": "Scopex Apps Private Ltd.",
-    "favicon": "images/logo-svg.png",
+    "favicon": "images/scopex-logo.png",
     "domain": "#"
 }

@@ -9,6 +9,8 @@
   top: 0;
   z-index: 111;
   background-color: #fff;
+  box-shadow: 0 0 50px rgba(0,0,0,0.072);
+
 }
 
 .navbar {
@@ -52,7 +54,7 @@
   }
 
   .navbar__item {
-    margin-left: 1.25rem;
+    margin-left: 2.5rem;
   }
 
   .js-menu-toggle {

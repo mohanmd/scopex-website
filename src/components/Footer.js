@@ -4,14 +4,19 @@ import _ from 'lodash';
 import Action from './Action';
 import {htmlToReact, withPrefix} from '../utils';
 import {menuItem} from '../data/menus/menu-item.json';
+// import  {Button, Modal,closeButton}  from 'react-bootstrap';
+// import { Link } from "react-router-dom";
 
 export default class Footer extends React.Component {
+
+
     render() {
       console.log(menuItem);
       let menus = menuItem.footerMenu;
       console.log(menus);
+
         return (
-            <footer className="site-footer">
+            <footer className="site-footer"> 
               <div className="footer_top">
                 <div className="container container--lg">
                   <div className="footer_logo">
@@ -94,6 +99,7 @@ export default class Footer extends React.Component {
                       <div className="address">
                         <div className="footer_col_title">Address</div>
                         <div className="address_field">
+                            <b>Scopex Apps India Pvt Ltd</b><br />
                             125-B, 2nd floor, Above Ashwini Textiles,
                             Near Singapore Shopping Center,
                             MTH Road, Ambattur, Chennai - 53.
@@ -145,7 +151,7 @@ export default class Footer extends React.Component {
                       <span>&copy;</span>  2021 scopex.com
                     </div>
                     <div className="develop_info text-center">
-                      Design & Developed By <a className="company_link">Xmediasolution.com</a>
+                      Design & Developed By <a className="company_link">Scopex Apps India Pvt Ltd</a>
                     </div>
                 </div>
               </div>
@@ -183,6 +189,7 @@ export default class Footer extends React.Component {
                 </div>
               </div>
             </footer>
+
         );
     }
 }
