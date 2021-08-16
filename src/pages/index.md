@@ -12,7 +12,7 @@ sections:
         url: /features
         style: secondary
     align: left
-    image: images/Banner Image.svg
+    image: images/banner_image.svg
     image_alt: Hero placeholder image
     image_position: left
     has_background: true
@@ -70,6 +70,11 @@ sections:
     type: grid_section
     class_name: insutrial_sectors
     bg_images: images/Apps banner image.svg
+apps_section:
+  type : feature_apps
+  title : Apps that are designed and developed to drive performance and resolve issues faster.
+  chart-img : images/feature/chart_images.svg
+  character_img : images/feature/character_images.svg
 seo:
   title: Scopex Apps India Private Ltd
   description: Apps 

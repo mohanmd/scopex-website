@@ -16,6 +16,7 @@ import TeamSection from './TeamSection';
 import Layout from './Layout';
 import GridSection from './GridSection';
 import ContactUs from './ContactUs';
+import FeatureApps from './FeaturesApps';
 
 export {
     Action,
@@ -34,8 +35,9 @@ export {
     SectionActions,
     TeamSection,
     Layout,
+    FeatureApps,
     GridSection,
-    ContactUs
+    ContactUs,
 };
 
 export default {
@@ -55,6 +57,7 @@ export default {
     SectionActions,
     TeamSection,
     Layout,
+    FeatureApps,
     GridSection,
-    ContactUs
+    ContactUs,
 };

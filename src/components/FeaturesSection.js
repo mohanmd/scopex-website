@@ -3,11 +3,14 @@ import _ from 'lodash';
 
 import {classNames, withPrefix, markdownify} from '../utils';
 import SectionActions from './SectionActions';
+import FeatureApps from './FeaturesApps';
 
 export default class FeaturesSection extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
         return (
+          <div>
+            <FeatureApps {...this.props}></FeatureApps>
             <section className="section section--features">
               {_.get(section, 'title', null) && (
               <div className="container container--md align-center">
@@ -44,6 +47,7 @@ export default class FeaturesSection extends React.Component {
                 ))}
               </div>
             </section>
+            </div>
         );
     }
 }
