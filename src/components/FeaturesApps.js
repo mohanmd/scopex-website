@@ -1,6 +1,8 @@
 import React from 'react';
 import _ from 'lodash'; 
-import chartImage from './chart_image'; 
+import CharactertImage  from './chart_image'; 
+import ChartImage  from './chart_image2'; 
+import ScopexPromo  from './scopexPromo'; 
 
 
 export default class FeatureApps extends React.Component {
@@ -15,21 +17,19 @@ export default class FeatureApps extends React.Component {
                         <div className="row align_end">
                             <div className="col-md-8">
                                 <div className="chart_image">
-                                    {_.get(section, 'chart-img', null) && (
+                                    {/* {_.get(section, 'chart-img', null) && (
                                         <img src={_.get(section, 'chart-img', null)} />
-                                    )}
+                                    )} */}
+                                    <ScopexPromo />
                                 </div>
                                 {_.get(section, 'title', null) && (
-                                    <h3 className="">{_.get(section, 'title', null)}</h3>
+                                    <h3 className="mt-0">{_.get(section, 'title', null)}</h3>
                                 )}
                             </div>
 
                             <div className="col-md-4">
                                 <div className="character_img">
-                                    {_.get(section, 'character_img', null) && (
-                                        <img src={_.get(section, 'character_img', null)} />
-                                    )}
-                                    <chartImage></chartImage>
+                                    <CharactertImage />
                                 </div>
                             </div>
                         </div>

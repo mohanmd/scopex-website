@@ -9,7 +9,7 @@ sections:
       experience cost effectivefly.
     actions:
       - label: Schedule a Demo
-        url: /features
+        url: /
         style: secondary
     align: left
     image: images/banner_image.svg

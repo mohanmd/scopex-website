@@ -89,39 +89,57 @@ export default class HeroSection extends React.Component {
                       </div>
                       { showing3 
                           ? <div className="content">
-                                <div className="title">123456789</div>
-                                <div className="sub_title">Available Monday - Saturday </div>
+                                <div className="title">+91 9841481435</div>
+                                <div className="sub_title">Available 24/7</div>
                             </div>
                           : null
                       }
                     </div>
                 </div>
 
-              <div className="modal" data-active={isActive ? "active" : ""}> 
+              <div className="modal enquery_modal" data-active={isActive ? "active" : ""}> 
                 <div className="modal-header">
-                  <h4>Enquiry</h4>
+                  {/* <h4>Enquiry</h4> */}
                   <div className="close_button" onClick={this.handleToggle}>
                     X
                   </div>
                 </div>
                 <div className="modal-body">
-                    <form className="">
-                        <div className="form-group">
-                            <label>Name</label>
-                            <input className="form_control" type="text"/>
-                        </div>
-                        <div className="form-group">
-                            <label>Email</label>
-                            <input className="form_control" type="email"/>
-                        </div>
-                        <div className="form-group">
-                            <label>Message</label>
-                            <textarea className="form_control" type="text"></textarea>
-                        </div>
-                        <div className="text-right form-group">
-                          <button>Submit</button>
-                        </div>
-                    </form>
+                    <div className="row">
+                      <div className="col-md-5">
+                          {_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null) && (
+                            <div className="logo">
+                              <img src={_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null)} />
+                            </div>
+                          )}
+                          <h3 className="title">Request a Call Back</h3>
+                          <div className="sub_title">Get answers and export guidance</div>
+                      </div>
+                      <div className="col-md-7">
+                        <form className="">
+                            <div className="form-group">
+                                <label>Name</label>
+                                <input className="form_control" type="text"/>
+                            </div>
+                            <div className="form-group">
+                                <label>Email</label>
+                                <input className="form_control" type="email"/>
+                            </div>
+                            <div className="form-group">
+                                <label>Mobile Number</label>
+                                <input className="form_control" type="text"/>
+                            </div>
+                            <div className="form-group">
+                                <label>Comment or Message</label>
+                                <textarea className="form_control" type="text"></textarea>
+                            </div>
+                            <div className="text-right form-group">
+                              <button>Call Back</button>
+                            </div>
+                        </form>
+                      </div>
+
+                    </div>
                 </div>
               </div>
               <div className="modal-overlay"  data-active={isActive ? "active" : ""} onClick={this.handleToggle}></div>

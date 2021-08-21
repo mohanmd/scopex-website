@@ -1,3 +1,12 @@
+
+.text-right {
+    text-align: right;
+}
+.mt-0{
+    margin-top: 0;
+}
+
+
 /* Header */ 
 
 .navbar__menu{
@@ -19,6 +28,9 @@
 .row{
     display: flex;
 }
+.col-md-6 {
+    width: 50%;
+}
 .col-md-8{
     max-width: 66.6%;
     width: 100%;
@@ -29,6 +41,12 @@
 }
 .align_end{
     align-items: flex-end;
+}
+.col-md-5{
+    width: calc(41.6%);
+}
+.col-md-7{
+    width: calc(100% - 41.6%);
 }
 
 // Modal
@@ -78,8 +96,27 @@
     height: 100%;
     background: #000;
     opacity: .5;
-    z-index: 11;
+    z-index: 111;
 }
+ 
+.enquery_modal{
+    max-width: 900px;
+    .logo img {
+        width: 100%;
+        max-width: 250px;
+    }
+    .title {
+        font-size: 23px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .sub_title {
+        font-size: 15px;
+    }
+    .modal-header{
+        padding: 13px;
+    }
+}   
 
 // app section
 section.section.section--features {
@@ -87,4 +124,122 @@ section.section.section--features {
 }
 section.feature_apps {
     padding-bottom: 6em;
+}
+
+svg.chart_image{
+    stroke-dasharray: 0 6000;
+    stroke-dashoffset: 4000;
+    animation: linesMoove 13s infinite forwards 0s alternate;
+}
+@keyframes linesMoove {
+    from{
+        stroke-dasharray: 4000 6000;
+    }
+    to{
+        stroke-dasharray: 9600 6000;
+    }
+}
+
+.chart-tick1, 
+.chart-tick2, 
+.chart-tick3,  
+.chart-tick4, 
+.chart-tick5,  
+.chart-tick6{
+    opacity: 0;
+}
+.chart-box1, 
+.chart-box2, 
+.chart-box3, 
+.chart-box4, 
+.chart-box5, 
+.chart-box6{
+    opacity: 0;
+}
+
+.chart-box1,
+.chart-tick1{
+    animation: custFade  2s forwards 2s;
+}
+.chart-box2,
+.chart-tick2{
+    animation: custFade  2s forwards 3s;
+}
+.chart-box3,
+.chart-tick3{
+    animation: custFade  2s forwards 3s;
+}
+.chart-box4,
+.chart-tick4{
+    animation: custFade  2s forwards 4s;
+}
+.chart-box5,
+.chart-tick5{
+    animation: custFade  2s forwards 5s;
+}
+.chart-box6,
+.chart-tick6{
+    animation: custFade  2s forwards 6s;
+}
+
+@keyframes custFade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.man-tie{
+    transform: skew( 0deg , 1deg);
+    animation: man_tie ease-in  1s infinite alternate 1s;
+}
+@keyframes man_tie {
+    from{
+        transform: skew( 0deg , 1deg);
+    }
+    to{
+        transform: skew( 1deg , 1deg);
+    }
+}
+
+// .man_shirt{ 
+//     animation: man_shirt ease-in  2s infinite alternate 1s;
+// }
+
+// @keyframes man_shirt {
+//     from{
+//         fill: #969696;
+//     }
+//     to{
+//         fill: rgb(240, 127, 42);
+//     }
+// }
+
+.man_eyebrew{
+    transform: translate(0px, 0px);
+    animation: man_eyebrew ease-in  1.5s infinite alternate 1s;
+}
+
+@keyframes man_eyebrew {
+    from{
+        transform: translate(0px, 0px);
+    }
+    to{
+        transform: translate(0px, 12px);
+    }
+}
+
+.man_eye{
+    animation: man_eye ease-in  1.5s infinite alternate 1s;
+}
+
+@keyframes man_eye {
+    from{
+        stroke-width: 16px;
+    }
+    to{
+        stroke-width: 4px;
+    }
 }
