@@ -2,11 +2,11 @@
 title: Home
 sections:
   - type: hero_section
-    title: Powerful apps for your business Growth
+    title: Powerful apps for your Business Growth
     subtitle: >-
       The app that can help you to optimize and atomize your business processes
       and can be interconnected with all to provide a fully-integrated
-      experience cost effectivefly.
+      experience cost effectively.
     actions:
       - label: Schedule a Demo
         url: /

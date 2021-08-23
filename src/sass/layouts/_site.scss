@@ -438,6 +438,15 @@ h1.block-title {
         cursor: pointer;
         &.message{
             bottom: 138px;
+            &#close{
+                .chat_widget{
+                    display: none;
+                }
+                .icon{
+                    color: #fff;
+                    font-size: 22px;
+                }
+            }
         }
         &.enquiry{
             bottom: 68px;

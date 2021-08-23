@@ -12,18 +12,18 @@ function ScopexPromo() {
       clipRule="evenodd"
       viewBox="0 0 5250 3480"
     >
-      <path
+      <path className="line"
         fill="none"
         stroke="#464947"
         strokeWidth="4.17"
         d="M695.479 2957.19l604.167-858.334 1395.83-12.5 570.834-991.666 912.5 8.333 533.333-700"
       ></path>
-      <circle cx="1297.4" cy="2100.71" r="31.25" fill="#f07f2a"></circle>
-      <circle cx="699.165" cy="2944.69" r="31.25" fill="#f07f2a"></circle>
-      <circle cx="2681.39" cy="2081.15" r="31.25" fill="#f07f2a"></circle>
-      <circle cx="3261.62" cy="1098.84" r="31.25" fill="#f07f2a"></circle>
-      <circle cx="4172.58" cy="1098.84" r="31.25" fill="#f07f2a"></circle>
-      <circle cx="4709.4" cy="399.599" r="31.25" fill="#f07f2a"></circle>
+      <circle cx="1297.4" cy="2100.71" r="40.25" fill="#f07f2a"></circle>
+      <circle cx="699.165" cy="2944.69" r="40.25" fill="#f07f2a"></circle>
+      <circle cx="2681.39" cy="2081.15" r="40.25" fill="#f07f2a"></circle>
+      <circle cx="3261.62" cy="1098.84" r="40.25" fill="#f07f2a"></circle>
+      <circle cx="4172.58" cy="1098.84" r="40.25" fill="#f07f2a"></circle>
+      <circle cx="4709.4" cy="399.599" r="40.25" fill="#f07f2a"></circle>
       <g className="chart-box1"
         fontFamily="'TitilliumWeb-Bold', 'Titillium Web'"
         fontSize="28.132"

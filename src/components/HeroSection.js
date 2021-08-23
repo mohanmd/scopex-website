@@ -1,14 +1,28 @@
-import React from 'react';
-import _ from 'lodash';
+import tawkTo from "tawkto-react";
+import React, { useEffect, useState } from 'react';
+import _ from 'lodash'; 
+
 
 import {classNames, toStyleObj, withPrefix} from '../utils';
 import SectionActions from './SectionActions';
  
+const tawkToPropertyId = '6104ea41649e0a0a5ccec9a9';
+
+// Direct Chat Link
+// https://tawk.to/chat/tawkToPropertyId/tawkToKey
+
+const tawkToKey = '1fbtj654t';
+
+// function 
+
 export default class HeroSection extends React.Component {
   state = { button1: false, button2: false, button3: false, isActive: false };
   constructor() {
     super();
   }
+  // componentDidMount(){
+  //   tawkTo(tawkToPropertyId, tawkToKey);
+  // }
 
   handleToggle = () => {
     this.setState({ isActive: !this.state.isActive });
@@ -24,6 +38,7 @@ export default class HeroSection extends React.Component {
         let background_opacity = background_opacity_pct * 0.01;
         let background_size = _.get(background, 'background_image_size', null) || 'cover';
         let background_repeat = _.get(background, 'background_image_repeat', null) || 'no-repeat';
+
         
         return (
             <section className={classNames('section', 'hero', {'bg-image': _.get(section, 'has_background', null) && _.get(background, 'background_image', null), 'inverse bg-blue': _.get(section, 'has_background', null) && (background_color === 'blue'), 'bg-gray': _.get(section, 'has_background', null) && (background_color === 'gray'), 'section--padding': _.get(section, 'has_background', null) || _.get(section, 'image', null)})}>
@@ -56,19 +71,31 @@ export default class HeroSection extends React.Component {
               </div>
 
 
-                <div className="fixed_sect">
-                  
-                    <div className="item message"  onClick={() => this.setState({ showing1: !showing1})}>
-                      <div className="icon">
+                <div className="fixed_sect ">
+                    <div className="item message" id={showing1 ? 'open' : 'close'} onClick={() => this.setState({ showing1: !showing1})}  >
+                      {/* <div className="icon">
                         <img src="images/icon/fixed/chat.svg" />
-                      </div>
+                      </div> */}
+
                       { showing1
+                          ? 
+                            <div className="icon">
+                              <span>X</span>
+                            </div>
+                          : 
+                          <div className="icon">
+                            <img src="images/icon/fixed/chat.svg" />
+                          </div>
+                      } 
+                      {/* { showing1
                           ? <div className="content">
                                 <div className="title">Chart with Expert</div>
                                 <div className="sub_title">Available Monday - Saturday </div>
                             </div>
                           : null
-                      }
+                      } */}
+
+                      <iframe src="https://tawk.to/chat/6104ea41649e0a0a5ccec9a9/1fbtj654t" className="chat_widget"></iframe>
                     </div>
                     <div className="item enquiry"  onClick={this.handleToggle}>
                       <div className="icon">
@@ -104,6 +131,7 @@ export default class HeroSection extends React.Component {
                     X
                   </div>
                 </div>
+
                 <div className="modal-body">
                     <div className="row">
                       <div className="col-md-5">
@@ -142,6 +170,7 @@ export default class HeroSection extends React.Component {
                     </div>
                 </div>
               </div>
+              
               <div className="modal-overlay"  data-active={isActive ? "active" : ""} onClick={this.handleToggle}></div>
             </section>
         );
