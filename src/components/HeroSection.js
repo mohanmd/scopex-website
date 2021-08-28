@@ -1,19 +1,11 @@
-import tawkTo from "tawkto-react";
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import _ from 'lodash'; 
 
 
 import {classNames, toStyleObj, withPrefix} from '../utils';
 import SectionActions from './SectionActions';
  
-const tawkToPropertyId = '6104ea41649e0a0a5ccec9a9';
 
-// Direct Chat Link
-// https://tawk.to/chat/tawkToPropertyId/tawkToKey
-
-const tawkToKey = '1fbtj654t';
-
-// function 
 
 export default class HeroSection extends React.Component {
   state = { button1: false, button2: false, button3: false, isActive: false };
@@ -25,8 +17,7 @@ export default class HeroSection extends React.Component {
   // }
 
   handleToggle = () => {
-    this.setState({ isActive: !this.state.isActive });
-    console.log('test');
+    this.setState({ isActive: !this.state.isActive }); 
   };
     render() {
         const { showing1, showing2, showing3, isActive } = this.state;
@@ -69,110 +60,8 @@ export default class HeroSection extends React.Component {
                   </div>
                 </div>
               </div>
-
-
-                <div className="fixed_sect ">
-                    <div className="item message" id={showing1 ? 'open' : 'close'} onClick={() => this.setState({ showing1: !showing1})}  >
-                      {/* <div className="icon">
-                        <img src="images/icon/fixed/chat.svg" />
-                      </div> */}
-
-                      { showing1
-                          ? 
-                            <div className="icon">
-                              <span>X</span>
-                            </div>
-                          : 
-                          <div className="icon">
-                            <img src="images/icon/fixed/chat.svg" />
-                          </div>
-                      } 
-                      {/* { showing1
-                          ? <div className="content">
-                                <div className="title">Chart with Expert</div>
-                                <div className="sub_title">Available Monday - Saturday </div>
-                            </div>
-                          : null
-                      } */}
-
-                      <iframe src="https://tawk.to/chat/6104ea41649e0a0a5ccec9a9/1fbtj654t" className="chat_widget"></iframe>
-                    </div>
-                    <div className="item enquiry"  onClick={this.handleToggle}>
-                      <div className="icon">
-                        <img src="images/icon/fixed/enquiry.svg" />
-                      </div>
-                      { showing2 
-                          ? <div className="content">
-                                <div className="title">Enquiry</div>
-                                <div className="sub_title">Available Monday - Saturday </div>
-                            </div>
-                          : null
-                      }
-                          
-                    </div>
-                    <div className="item support"  onClick={() => this.setState({ showing3: !showing3 })}>
-                      <div className="icon">
-                        <img src="images/icon/fixed/support.svg" />
-                      </div>
-                      { showing3 
-                          ? <div className="content">
-                                <div className="title">+91 9841481435</div>
-                                <div className="sub_title">Available 24/7</div>
-                            </div>
-                          : null
-                      }
-                    </div>
-                </div>
-
-              <div className="modal enquery_modal" data-active={isActive ? "active" : ""}> 
-                <div className="modal-header">
-                  {/* <h4>Enquiry</h4> */}
-                  <div className="close_button" onClick={this.handleToggle}>
-                    X
-                  </div>
-                </div>
-
-                <div className="modal-body">
-                    <div className="row">
-                      <div className="col-md-5">
-                          {_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null) && (
-                            <div className="logo">
-                              <img src={_.get(this.props, 'pageContext.site.siteMetadata.header.logo', null)} />
-                            </div>
-                          )}
-                          <h3 className="title">Request a Call Back</h3>
-                          <div className="sub_title">Get answers and export guidance</div>
-                      </div>
-                      <div className="col-md-7">
-                        <form className="">
-                            <div className="form-group">
-                                <label>Name</label>
-                                <input className="form_control" type="text"/>
-                            </div>
-                            <div className="form-group">
-                                <label>Email</label>
-                                <input className="form_control" type="email"/>
-                            </div>
-                            <div className="form-group">
-                                <label>Mobile Number</label>
-                                <input className="form_control" type="text"/>
-                            </div>
-                            <div className="form-group">
-                                <label>Comment or Message</label>
-                                <textarea className="form_control" type="text"></textarea>
-                            </div>
-                            <div className="text-right form-group">
-                              <button>Call Back</button>
-                            </div>
-                        </form>
-                      </div>
-
-                    </div>
-                </div>
-              </div>
-              
-              <div className="modal-overlay"  data-active={isActive ? "active" : ""} onClick={this.handleToggle}></div>
             </section>
+            
         );
     }
 }

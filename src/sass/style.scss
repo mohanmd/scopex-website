@@ -150,7 +150,7 @@ section.feature_apps {
 }
 
 .chat_widget {
-    height: calc(25em);
+    height: calc(28em);
     width: 340px;
     border: 0;
     border-radius: 10px;
@@ -158,7 +158,10 @@ section.feature_apps {
     position: fixed;
     bottom: 180px;
     right: 63px;
-
+    z-index: 111;
+}
+.chat_widget:not(.chat_open) {
+    display: none;
 }
 
 

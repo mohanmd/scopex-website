@@ -4,7 +4,6 @@ import {classNames, htmlToReact, withPrefix, Link, markdownify, toStyleObj} from
 
 export default class GridSection extends React.Component {
     render() {
-        console.log(this.props );
         let section = _.get(this.props, 'section', null);
 
         return (

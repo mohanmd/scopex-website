@@ -459,6 +459,9 @@ h1.block-title {
             height: 48px;
             width: 48px;
             padding: 4px;
+            color: #fff;
+            font-size: 30px;
+            text-transform: lowercase;
             @extend .dflex_center_all;
             img{
                 filter: invert(1);

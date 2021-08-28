@@ -15,6 +15,13 @@ module.exports = {
             }
         },
         {
+          resolve: "gatsby-source-filesystem",
+          options: {
+            name: "images-new",
+            path: `${__dirname}/src/images/`,
+          },
+        },
+        {
             resolve: `gatsby-plugin-sass`,
             options: {}
         },

@@ -1,77 +1,75 @@
 {
-    "menuItem": {
-        "footerMenu": [
-            {   
-                "label" : "Quick Links",
-                "items": [
-                    {
-                        "label" :"About Us",
-                        "url" : "",
-                        "style" : "link"
-                    },
-                    {
-                        "label" :"Blog",
-                        "url" : "",
-                        "style" : "link"
-                    },
-                    {
-                        "label" :"Clients",
-                        "url" : "",
-                        "style" : "link"
-                    },
-                    {
-                        "label" :"Careers",
-                        "url" : "",
-                        "style" : "link"
-                    },
-                    {
-                        "label" :"Sign Up",
-                        "url" : "",
-                        "style" : "link"
-                    },
-                    {
-                        "label" :"Contact Us",
-                        "url" : "",
-                        "style" : "link"
-                    }
-                ]
+"footerMenu": [
+    {   
+        "label" : "Quick Links",
+        "items": [
+            {
+                "label" :"About Us",
+                "url" : "",
+                "style" : "link"
             },
             {
-                "label" : "Products",
-                "items": [
-                    {
-                        "label" :"About Us",
-                        "url" : "",
-                        "style" : "link"
-                    },
-                    {
-                        "label" :"Blog",
-                        "url" : "",
-                        "style" : "link"
-                    },
-                    {
-                        "label" :"Clients",
-                        "url" : "",
-                        "style" : "link"
-                    }
-                ]
+                "label" :"Blog",
+                "url" : "",
+                "style" : "link"
             },
             {
-                "label" : "Resources",
-                "items": [
-                    {
-                        "label" :"About Us",
-                        "url" : "",
-                        "style" : "link"
-                    },
-                    {
-                        "label" :"Blog",
-                        "url" : "",
-                        "style" : "link"
-                    }
-                ]
+                "label" :"Clients",
+                "url" : "",
+                "style" : "link"
+            },
+            {
+                "label" :"Careers",
+                "url" : "",
+                "style" : "link"
+            },
+            {
+                "label" :"Sign Up",
+                "url" : "",
+                "style" : "link"
+            },
+            {
+                "label" :"Contact Us",
+                "url" : "",
+                "style" : "link"
+            }
+        ]
+    },
+    {
+        "label" : "Products",
+        "items": [
+            {
+                "label" :"About Us",
+                "url" : "",
+                "style" : "link"
+            },
+            {
+                "label" :"Blog",
+                "url" : "",
+                "style" : "link"
+            },
+            {
+                "label" :"Clients",
+                "url" : "",
+                "style" : "link"
+            }
+        ]
+    },
+    {
+        "label" : "Resources",
+        "items": [
+            {
+                "label" :"About Us",
+                "url" : "",
+                "style" : "link"
+            },
+            {
+                "label" :"Blog",
+                "url" : "",
+                "style" : "link"
             }
         ]
     }
+]
 }
  

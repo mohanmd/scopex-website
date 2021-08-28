@@ -5,32 +5,32 @@
         "nav_links": [
             {
                 "label": "Apps",
-                "url": "/features",
+                "url": "/#",
                 "style": "link"
             },
             {
                 "label": "Industries",
-                "url": "/blog",
+                "url": "/#",
                 "style": "link"
             },
             {
                 "label": "Integrations",
-                "url": "/about",
+                "url": "/#",
                 "style": "link"
             },
             {
                 "label": "Custom makes",
-                "url": "/style-guide",
+                "url": "/#",
                 "style": "link"
             },
             {
                 "label": "Careers",
-                "url": "/contact",
+                "url": "/#",
                 "style": "link"
             },
             {
                 "label": "Login",
-                "url": "/login",
+                "url": "/#",
                 "style": "button"
             }
         ],
@@ -41,12 +41,12 @@
         "nav_links": [
             {
                 "label": "Contact Us",
-                "url": "/contact",
+                "url": "/#",
                 "style": "link"
             },
             {
                 "label": "Privacy and Terms",
-                "url": "/terms",
+                "url": "/#",
                 "style": "link"
             }
         ],
@@ -83,6 +83,45 @@
         ],
         "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=starter&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>"
     },
+    
+    "footer_menu" : [
+        {
+        "title": "Quick Links",
+        "menu_list" : [
+            {
+                "label" : "About us",
+                "url" : ""
+            },
+            {
+                "label" : "Blog",
+                "url" : ""
+            },
+            {
+                "label" : "Clients",
+                "url" : ""
+            },
+            {
+                "label" : "Careers",
+                "url" : ""
+            },
+            {
+                "label" : "Sign Up",
+                "url" : ""
+            },
+            {
+                "label" : "Contact Us",
+                "url" : ""
+            }
+        ] },
+        {
+            "label": "Twitter",
+            "url": "",
+            "style": "link",
+            "new_window": false,
+            "icon" : "images/icon/social/twitter.svg"
+        }
+    ],
+
     "title": "Scopex Apps Private Ltd.",
     "favicon": "images/scopex-logo.png",
     "domain": "/"

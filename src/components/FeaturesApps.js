@@ -1,14 +1,14 @@
 import React from 'react';
 import _ from 'lodash'; 
 import CharactertImage  from './chart_image'; 
-import ChartImage  from './chart_image2'; 
+// import ChartImage  from './chart_image2'; 
 import ScopexPromo  from './scopexPromo'; 
 
 
 export default class FeatureApps extends React.Component {
     render() { 
         let section = this.props.pageContext.frontmatter.apps_section;
-        console.log(this.props);
+        // console.log(this.props);
 
         return (
             <section className="feature_apps">   
