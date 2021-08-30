@@ -21,7 +21,7 @@ export default class HeroSection extends React.Component {
   };
     render() {
         const { showing1, showing2, showing3, isActive } = this.state;
-        // console.log(showing1);
+        console.log(this.props);
         let section = _.get(this.props, 'section', null);
         let background = _.get(section, 'background', null);
         let background_color = _.get(background, 'background_color', null) || 'white';

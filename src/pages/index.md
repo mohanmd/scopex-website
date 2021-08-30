@@ -75,6 +75,16 @@ apps_section:
   title : Apps that are designed and developed to drive performance and resolve issues faster.
   chart-img : images/feature/chart_images.svg
   character_img : images/feature/character_images.svg
+apps_info_section :
+  type : familiar_apps 
+  title : Well Integrated with apps that keeps your business ticking every day
+  img_list:
+    - img: images/familiar/logo1.jpg
+    - img: images/familiar/logo2.jpg
+    - img: images/familiar/logo3.jpg
+    - img: images/familiar/logo4.jpg
+  more: Learn More
+
 seo:
   title: Scopex Apps India Private Ltd
   description: Apps 

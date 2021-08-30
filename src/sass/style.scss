@@ -6,6 +6,12 @@
     margin-top: 0;
 }
 
+.bg_dark{
+    background-color: #474948;
+}
+.text_light{
+    color: #fff;
+}
 
 /* Header */ 
 
@@ -42,6 +48,10 @@
 .align_end{
     align-items: flex-end;
 }
+.align_center{
+    align-items: center;
+}
+
 .col-md-5{
     width: calc(41.6%);
 }
@@ -282,4 +292,10 @@ svg.chart_image{
     to{
         stroke-width: 4px;
     }
+}
+
+
+// Future Apps
+.familiar_apps{
+    padding: 4em 0;
 }
